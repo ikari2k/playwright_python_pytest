@@ -1,8 +1,11 @@
 {
   "name": "playwright_python_pytest",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my scratchpad for all things related to pytest and playwright.",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {},
   "keywords": [],
   "author": "",
