@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "playwright-python-pytest"
+version = "0.1.0"
+description = "Learning playwright with pytest"
+authors = ["ikari2k <pluta.m@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.0.0"
+pytest-playwright = "^0.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
