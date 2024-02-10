@@ -1,3 +1,5 @@
+https://github.com/ikari2k/playwright_python_pytest/actions/workflows/playwright.yml/badge.svg
+
 # What is this repo about:
 This is my scratchpad for all things related to pytest and playwright.
 
