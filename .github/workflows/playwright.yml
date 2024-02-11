@@ -33,6 +33,7 @@ jobs:
         python -m playwright install chromium --with-deps
     - name: Run tests
       run: |
+        source .venv/bin/activate
         pytest tests/ --browser chromium --tracing=retain-on-failure
         coverage report
     - uses: actions/upload-artifact@v3
