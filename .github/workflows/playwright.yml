@@ -34,7 +34,7 @@ jobs:
     - name: Run tests
       run: |
         source .venv/bin/activate
-        pytest tests/ --tracing=retain-on-failure
+        pytest 
         coverage report
     - uses: actions/upload-artifact@v3
       if: always()
