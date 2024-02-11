@@ -7,6 +7,5 @@ node_modules/
 __pycache__
 .vscode
 /test-results/
-/playwright-report/
 /blob-report/
 /playwright/.cache/
