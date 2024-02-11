@@ -1,11 +1,7 @@
 node_modules/
-/test-results/
-/playwright-report/
 /blob-report/
 /playwright/.cache/
 .DS_Store
 __pycache__
 .vscode
 /test-results/
-/blob-report/
-/playwright/.cache/
