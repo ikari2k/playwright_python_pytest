@@ -4,7 +4,7 @@ from playwright.async_api import async_playwright
 
 
 with sync_playwright() as sp:
-    browser = sp.chromium.launch(headless=False, slow_mo=500)
+    browser = sp.chromium.launch(slow_mo=500)
     page = browser.new_page()
     page.goto("http://playwright.com")
     print(page.title())
@@ -13,7 +13,7 @@ with sync_playwright() as sp:
 
 async def main():
     async with async_playwright() as ap:
-        browser = await ap.chromium.launch(headless=False, slow_mo=2000)
+        browser = await ap.chromium.launch(slow_mo=2000)
         page = await browser.new_page()
         await page.goto("http://playwright.com")
         print(await page.title())

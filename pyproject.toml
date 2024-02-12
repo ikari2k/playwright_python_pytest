@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 pytest = "^8.0.0"
 pytest-playwright = "^0.4.4"
+allure-pytest = "^2.13.2"
 
 
 [build-system]
