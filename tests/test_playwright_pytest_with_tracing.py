@@ -1,9 +1,10 @@
 from playwright.sync_api import Page, expect
 
 
-def test_example(page: Page, browser, browser_type) -> None:
+def test_example(page: Page, browser_type, context) -> None:
     browser_type.launch(headless=True, slow_mo=2000)
-    browser.start_tracing(path="trace.json", screenshots=True)
+    context.tracing.start(screenshots=True, sources=True, snapshots=True)
+    page = context.new_page()
     page.goto("https://www.wikipedia.org/")
     page.get_by_label("Search Wikipedia").click()
     page.get_by_label("Search Wikipedia").fill("trump")
@@ -11,4 +12,4 @@ def test_example(page: Page, browser, browser_type) -> None:
     expect(
         page.get_by_role("heading", name="Trump Tower").locator("span")
     ).to_be_visible()
-    browser.stop_tracing()
+    context.tracing.stop(path="trace.zip")
