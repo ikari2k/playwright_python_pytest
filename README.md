@@ -27,3 +27,24 @@ This is my scratchpad for all things related to pytest and playwright.
 **Debugging:** Debugging synchronous code can be more straightforward compared to debugging asynchronous code, especially for developers who are not yet comfortable with asynchronous programming paradigms.
 
 In summary, the choice between Async Playwright and Sync Playwright depends on factors such as your familiarity with asynchronous programming, the nature of your automation tasks, performance requirements, and compatibility with existing codebases. Both libraries have their strengths, and the decision should be based on what best fits the needs of your project.
+
+### Auto-waiting
+
+Playwright performs a range of actionability checks on the elements
+before making actions to ensure these actions behave as expected.
+It auto-waits for all the relevant checks to pass and only then
+performs the requested action.
+For example, for page.click(selector, **kwargs), Playwright will
+ensure that:
+-  element is Attached to the DOM
+-  element is Visible
+- element is Stable, as in not animating or completed animation
+- element Receives Events, as in not obscured by other
+elements
+- element is Enabled
+
+### Forcing actions
+
+Some actions like page.click(selector, **kwargs) support force option that disables
+non-essential actionability checks, for example passing truthy force to
+peal reeves cir events) method will not check that the target element
