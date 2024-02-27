@@ -10,7 +10,5 @@ class MyTest(unittest.TestCase):
 
     def test_foobar(self):
         self.page.goto("https://microsoft.com")
-        self.page.locator(
-            '[aria-label="Shop Surface Pro 8 and Surface Pro Keyboard Bundle\\."]'
-        ).click()
+        self.page.locator('[aria-label="Kup Surface Laptop 5"]').click()
         assert self.page.evaluate("1 + 1") == 2
