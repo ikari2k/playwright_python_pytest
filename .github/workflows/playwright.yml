@@ -34,5 +34,5 @@ jobs:
     - name: Run tests
       run: |
         source .venv/bin/activate
-        pytest 
+        pytest tests/test_playwright_pytest.py
         
