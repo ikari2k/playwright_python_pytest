@@ -50,3 +50,14 @@ def pytest_configure(config):
 #     )
 #     yield context
 #     context.close()
+
+
+@pytest.fixture(scope="session")
+def browser_context_args(browser_context_args, playwright):
+    iphone11 = playwright.devices["iPhone 11"]
+    iphone14pro = playwright.devices["iPhone 14 Pro"]
+    return {
+        **browser_context_args,
+        **iphone11,
+        **iphone14pro,
+    }
