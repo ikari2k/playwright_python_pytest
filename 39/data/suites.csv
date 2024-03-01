@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 01 18:13:03 GMT 2024","Fri Mar 01 18:13:05 GMT 2024","1234","tests","test_playwright_pytest","","","","test_example[chromium]",""
