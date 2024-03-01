@@ -1,0 +1,11 @@
+def test_inputs(page):
+    page.goto("https://facebook.com/register")
+    page.get_by_test_id("cookie-policy-manage-dialog-accept-button").click()
+    page.get_by_label("First name").click()
+    page.get_by_label("First name").fill("Jack")
+    page.get_by_label("Surname").click()
+    page.get_by_label("Surname").fill("White")
+    page.get_by_label("Day").select_option("20")
+    page.get_by_label("Month").select_option("3")
+    page.get_by_label("Year").select_option("2014")
+    page.get_by_label("Male", exact=True).check()
