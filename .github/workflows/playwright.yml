@@ -27,8 +27,7 @@ jobs:
     - name: Run tests
       run: |
         source $(poetry env info --path)/bin/activate
-        pytest tests/test_playwright_pytest.py --alluredir=allure-results
-        continue-on-error: true
+        run: pytest tests/test_playwright_pytest.py  --alluredir=allure-results
     - name: Get Allure history
       uses: actions/checkout@v3
       if: always()
