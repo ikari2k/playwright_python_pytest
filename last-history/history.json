@@ -1,0 +1,1 @@
+{"5377dd20187ced7463bdf93b7da66baa":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"377a59ac8beb1006","reportUrl":"https://ikari2k.github.io/playwright_python_pytest/38//#testresult/377a59ac8beb1006","status":"passed","time":{"start":1709302822947,"stop":1709302824139,"duration":1192}}]}}
