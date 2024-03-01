@@ -26,6 +26,7 @@ jobs:
         python -m playwright install chromium --with-deps
     - name: Run tests
       run: |
+        poetry shell
         pytest tests/test_playwright_pytest.py --alluredir=allure-results
         continue-on-error: true
     - name: Get Allure history
